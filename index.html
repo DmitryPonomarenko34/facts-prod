@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220208024144">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220210013024">
   <title>Главная</title>
 </head>
 
@@ -19,7 +19,7 @@
           <span class="burger__line"></span>
         </button>
         <div class="menu__box js-menubox">
-          <ul class="menu__list js-menulist">
+          <ul class="menu__list">
             <li class="menu__list-item">
               <span class="menu__list-caption">
                 Разделы
@@ -82,13 +82,38 @@
                 </li>
               </ul>
             </li>
+            <li class="menu__list-item mobile-menu">
+              <span class="menu__list-caption">Важные</span>
+              <ul class="js-header__list list submenu">
+                <li class="submenu__item">
+                  <a class="list__link submenu__link" href="#">
+                    Категории
+                  </a>
+                </li>
+                <li class="submenu__item">
+                  <a class="list__link submenu__link" href="#">
+                    Спецтема
+                  </a>
+                </li>
+                <li class="submenu__item">
+                  <a class="list__link submenu__link" href="#">
+                    Рейтинги
+                  </a>
+                </li>
+                <li class="submenu__item">
+                  <a class="list__link submenu__link" href="#">
+                    Подписка
+                  </a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </nav>
       <a class="header__logo logo" href="#">
-        <picture><source srcset="img/logo.webp" type="image/webp"><img class="logo__img" width="135px" height="30px" src="img/logo.png" alt="logo"></picture>
+        <picture><source srcset="img/logo.webp" type="image/webp"><img class="header__logo-img logo__img" width="135" height="30" src="img/logo.png" alt="logo"></picture>
       </a>
-      <ul class="header__list js-header__list list">
+      <ul class="header__list list">
         <li class="header__list-item">
           <a class="header__list-link list__link" href="#">
             Категории
@@ -122,7 +147,7 @@
           </a>
         </li>
       </ul>
-      <a class="search-link js-search-link" href="#">
+      <a class="search-link js-search-link" href="#search-popup">
         <svg class="search-link__icon">
           <use xlink:href="img/icons/mono/spriteMono.svg#search"></use>
         </svg>
@@ -131,11 +156,102 @@
   </div>
 </header>
     <main class="main">
-      <div class="container">
-        1212
+      <section class="gallery">
+  <div class="container">
+    <div class="gallery__thumb-swiper swiper">
+      <div class="swiper-wrapper">
+        <div class="gallery__thumb-slide swiper-slide">
+          <picture><source srcset="img/first-gallery/thumb-1.webp" type="image/webp"><img class="gallery__thumb-img gallery__thumb-img--top" src="img/first-gallery/thumb-1.jpg" width="302" height="60" alt="леди в законе"></picture>
+          <span class="gallery__thumb-text">
+            Леди в законе. Особый статус для жены президетна
+          </span>
+        </div>
+        <div class="gallery__thumb-slide swiper-slide">
+          <picture><source srcset="img/first-gallery/thumb-2.webp" type="image/webp"><img class="gallery__thumb-img" src="img/first-gallery/thumb-2.jpg" width="302" height="60" alt="леди в законе"></picture>
+          <span class="gallery__thumb-text gallery__thumb-text--min">
+            Взрыв на Позняках
+            в Киеве
+          </span>
+        </div>
+        <div class="gallery__thumb-slide swiper-slide">
+          <picture><source srcset="img/first-gallery/thumb-3.webp" type="image/webp"><img class="gallery__thumb-img" src="img/first-gallery/thumb-3.jpg" width="302" height="60" alt="леди в законе"></picture>
+          <span class="gallery__thumb-text">
+            Потоп на западной Украине
+          </span>
+        </div>
+        <div class="gallery__thumb-slide swiper-slide">
+          <picture><source srcset="img/first-gallery/thumb-4.webp" type="image/webp"><img class="gallery__thumb-img" src="img/first-gallery/thumb-4.jpg" width="302" height="60" alt="леди в законе"></picture>
+          <span class="gallery__thumb-text">
+            Цифровая трансформация бизнеса Украины
+          </span>
+        </div>
       </div>
+    </div>
+    <div class="gallery__for-swiper swiper">
+      <div class="swiper-wrapper">
+        <div class="gallery__for-slide swiper-slide">
+          <a class="gallery__for-link" href="#">
+            <picture><source srcset="img/first-gallery/big-1.webp" type="image/webp"><img class="gallery__for-img object-fit--none" src="img/first-gallery/big-1.jpg" alt="Политика"></picture>
+          </a>
+          <span class="gallery__for-category info-text">
+            Политика
+          </span>
+          <h1 class="gallery__for-title">
+            Леди в законе. Зачем Зеленскому понадобился особый статус для жены президента
+          </h1>
+          <p class="gallery__for-text">
+            Владимир Зеленский загорелся идеей разработки закона о первой леди. Для чего ему это понадобилось, и какие
+            права и обязанности возлагаются на супругу главы государства в Украине
+          </p>
+        </div>
+        <div class="gallery__for-slide swiper-slide">
+          <a class="gallery__for-link" href="#">
+            <picture><source srcset="img/first-gallery/big-2.webp" type="image/webp"><img class="gallery__for-img" src="img/first-gallery/big-2.jpg" alt="Политика"></picture>
+          </a>
+          <span class="gallery__for-category info-text">
+            Политика
+          </span>
+          <h2 class="gallery__for-title">
+            Следствие через 14 месяцев выяснило причину взрыва дома на Позняках (фото)
+          </h1>
+          <p class="gallery__for-text">
+            Под процессуальным руководством Киевской городской прокуратуры было завершено досудебное расследование по уголовному производству, связанному со взрывом в жилом доме на киевских Позняках, сообщает в Facebook пресс-секретарь Киевской горпрокуратуры Надежда Максимец.
+          </p>
+        </div>
+        <div class="gallery__for-slide swiper-slide">
+          <a class="gallery__for-link" href="#">
+            <picture><source srcset="img/first-gallery/big-3.webp" type="image/webp"><img class="gallery__for-img" src="img/first-gallery/big-3.jpg" alt="Политика"></picture>
+          </a>
+          <span class="gallery__for-category info-text">
+            Политика
+          </span>
+          <h2 class="gallery__for-title">
+            Карпаты ждет новое затопление, - ГСЧС
+          </h2>
+          <p class="gallery__for-text">
+            В реках Карпатского региона в связи с дождями ожидаются наводнения: уровень воды на отдельных участках поднимется на полтора метра."По данным Укргидрометцентра, 27-28 сентября, в связи с ожидаемыми значительными дождями, местами сильными ливнями, на реках Карпатского региона ожидаются повышение уровней воды на 0,3-1,5 м", – написали в ГСЧС.
+          </p>
+        </div>
+        <div class="gallery__for-slide swiper-slide">
+          <a class="gallery__for-link" href="#">
+            <picture><source srcset="img/first-gallery/big-4.webp" type="image/webp"><img class="gallery__for-img" src="img/first-gallery/big-4.jpg" alt="Политика"></picture>
+          </a>
+          <span class="gallery__for-category info-text">
+            Новости
+          </span>
+          <h2 class="gallery__for-title">
+            Домашняя работа. Как пандемия ускорила процесс диджитализации в бизнесе
+          </h1>
+          <p class="gallery__for-text">
+            В 2017 году профессор политологии Роберт Келли получил мировую известность из-за курьезного случая в прямом эфире. Когда он давал онлайн-комментарий телеканалу Би-би-си, в кадре сначала появилась его маленькая дочка, затем — младенец в ходунках и следом за ними испуганная жена, пытающаяся забрать детей. Как позже объяснил профессор, он попросту забыл закрыть дверь, и дети зашли в его кабинет, где лежали книжки и игрушки.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
-    <div class="search-popup js-popup">
+    <div class="search-popup" id="search-popup">
       <button class="search-popup__close js-popup-close">
         <svg class="search-popup__icclose">
           <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
@@ -156,7 +272,7 @@
     <footer class="footer">
   <div class="container">
     <a class="footer__logo logo" href="#">
-      <picture><source srcset="img/logo.webp" type="image/webp"><img class="logo__img" width="184px" height="41px" src="img/logo.png" alt="logo"></picture>
+      <picture><source srcset="img/logo.webp" type="image/webp"><img class="logo__img" width="184" height="41" src="img/logo.png" alt="logo"></picture>
     </a>
     <div class="footer__inner">
       <div class="footer__content">
@@ -205,13 +321,13 @@
         <div class="footer__content-info">
           <ul class="footer__content-list">
             <li class="footer__content-item">
-              <picture><source srcset="img/advertising/focus-1.webp" type="image/webp"><img class="footer__content-img" src="img/advertising/focus-1.jpg" width="99px" height="122px" alt="фокус статья"></picture>
+              <picture><source srcset="img/advertising/focus-1.webp" type="image/webp"><img class="footer__content-img" src="img/advertising/focus-1.jpg" width="99" height="122" alt="фокус статья"></picture>
             </li>
             <li class="footer__content-item">
-              <picture><source srcset="img/advertising/focus-2.webp" type="image/webp"><img class="footer__content-img" src="img/advertising/focus-2.jpg" alt="фокус статья"></picture>
+              <picture><source srcset="img/advertising/focus-2.webp" type="image/webp"><img class="footer__content-img" width="99" height="122" src="img/advertising/focus-2.jpg" alt="фокус статья"></picture>
             </li>
             <li class="footer__content-item">
-              <picture><source srcset="img/advertising/focus-3.webp" type="image/webp"><img class="footer__content-img" src="img/advertising/focus-3.jpg" alt="фокус статья"></picture>
+              <picture><source srcset="img/advertising/focus-3.webp" type="image/webp"><img class="footer__content-img" width="99" height="122" src="img/advertising/focus-3.jpg" alt="фокус статья"></picture>
             </li>
           </ul>
           <div class="footer__content-box">
@@ -226,32 +342,37 @@
       </div>
       <div class="footer__info">
         <div class="footer__info-item">
-          <p class="footer__info-text">
-            Все права на материалы, опубликованные на данном ресурсе, принадлежат ООО "ФОКУС МЕДИА". Какое-либо
-            использование материалов без письменного разрешения ООО "ФОКУС МЕДИА" - запрещено. При использовании
-            материалов с данного ресурса гиперссылка focus.ua обязательна.
-          </p>
-          <p class="footer__info-text">
-            Данный ресурс — для пользователей возрастом от 18 лет и старше.
-          </p>
+          <div class="footer__info-box">
+            <p class="footer__info-text">
+              Все права на материалы, опубликованные на данном ресурсе, принадлежат ООО "ФОКУС МЕДИА". Какое-либо
+              использование материалов без письменного разрешения ООО "ФОКУС МЕДИА" - запрещено. При использовании
+              материалов с данного ресурса гиперссылка focus.ua обязательна.
+            </p>
+            <p class="footer__info-text">
+              Данный ресурс — для пользователей возрастом от 18 лет и старше.
+            </p>
+          </div>
           <span class="footer__copy">
             © 2020 Фокус. Все права защищены.
           </span>
         </div>
         <div class="footer__info-item">
-          <p class="footer__info-text">
-            Перепечатка, копирование или воспроизведение информации, содержащей ссылку на агентство ИнА "Українські
-            Новини", в каком-либо виде строго запрещены.
-          </p>
-          <p class="footer__info-text">
-            Все материалы, которые размещены на этом сайте со ссылкой на агентство "Интерфакс-Украина", не подлежат
-            дальнейшему воспроизведению и/или распространению в любой форме, кроме как с письменного разрешения
-            агентства.
-          </p>
-          <p class="footer__info-text">
-            Материалы с плашками "Р", "Новости партнеров", "Новости компаний", "Новости партий", "Инновации", "Позиция",
-            "Спецпроект при поддержке" публикуются на коммерческой основе.
-          </p>
+          <div class="footer__info-box">
+            <p class="footer__info-text">
+              Перепечатка, копирование или воспроизведение информации, содержащей ссылку на агентство ИнА "Українські
+              Новини", в каком-либо виде строго запрещены.
+            </p>
+            <p class="footer__info-text">
+              Все материалы, которые размещены на этом сайте со ссылкой на агентство "Интерфакс-Украина", не подлежат
+              дальнейшему воспроизведению и/или распространению в любой форме, кроме как с письменного разрешения
+              агентства.
+            </p>
+            <p class="footer__info-text">
+              Материалы с плашками "Р", "Новости партнеров", "Новости компаний", "Новости партий", "Инновации",
+              "Позиция",
+              "Спецпроект при поддержке" публикуются на коммерческой основе.
+            </p>
+          </div>
           <a class="footer__link" href="#">
             Політика конфіденційності
           </a>
@@ -261,7 +382,7 @@
   </div>
 </footer>
   </div>
-  <script src="js/main.min.js?_v=20220208024144"></script>
+  <script src="js/main.min.js?_v=20220210013024"></script>
 </body>
 
 </html>
