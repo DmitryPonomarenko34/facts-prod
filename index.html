@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220211165934">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220214102048">
   <title>Главная</title>
 </head>
 
 <body>
   <div class="site-container js-wrapper">
-    <header class="header">
+    <header class="header js-header">
   <div class="container-fluid">
     <div class="header__inner">
       <nav class="menu">
@@ -19,7 +19,7 @@
           <span class="burger__line"></span>
         </button>
         <div class="menu__box js-menubox">
-          <ul class="menu__list">
+          <ul class="menu__list" data-simplebar>
             <li class="menu__list-item">
               <span class="menu__list-caption">
                 Разделы
@@ -156,10 +156,10 @@
   </div>
 </header>
     <main class="main">
-      <section class="gallery">
+      <section class="gallery js-padding">
   <div class="container">
     <div class="gallery__thumb-swiper swiper">
-      <div class="swiper-wrapper">
+      <div class="gallery__thumb-wrapper swiper-wrapper">
         <div class="gallery__thumb-slide swiper-slide">
           <picture><source srcset="img/first-gallery/thumb-1.webp" type="image/webp"><img class="gallery__thumb-img gallery__thumb-img--top" src="img/first-gallery/thumb-1.jpg" width="302" height="60" alt="леди в законе"></picture>
           <span class="gallery__thumb-text">
@@ -193,9 +193,9 @@
           <a class="gallery__for-link" href="#">
             <picture><source srcset="img/first-gallery/big-1.webp" type="image/webp"><img class="gallery__for-img" src="img/first-gallery/big-1.jpg" alt="Политика" width="1274" height="466"></picture>
           </a>
-          <span class="gallery__for-category info-text">
+          <a class="gallery__for-category info-text" href="#">
             Политика
-          </span>
+          </a>
           <h1 class="gallery__for-title">
             Леди в законе. Зачем Зеленскому понадобился особый статус для жены президента
           </h1>
@@ -208,9 +208,9 @@
           <a class="gallery__for-link" href="#">
             <picture><source srcset="img/first-gallery/big-2.webp" type="image/webp"><img class="gallery__for-img" src="img/first-gallery/big-2.jpg" alt="Политика" width="1274" height="466"></picture>
           </a>
-          <span class="gallery__for-category info-text">
+          <a class="gallery__for-category info-text" href="#">
             Политика
-          </span>
+          </a>
           <h2 class="gallery__for-title">
             Следствие через 14 месяцев выяснило причину взрыва дома на Позняках (фото)
           </h1>
@@ -222,9 +222,9 @@
           <a class="gallery__for-link" href="#">
             <picture><source srcset="img/first-gallery/big-3.webp" type="image/webp"><img class="gallery__for-img" src="img/first-gallery/big-3.jpg" alt="Политика" width="1274" height="466"></picture>
           </a>
-          <span class="gallery__for-category info-text">
+          <a class="gallery__for-category info-text" href="#">
             Политика
-          </span>
+          </a>
           <h2 class="gallery__for-title">
             Карпаты ждет новое затопление, - ГСЧС
           </h2>
@@ -236,9 +236,9 @@
           <a class="gallery__for-link" href="#">
             <picture><source srcset="img/first-gallery/big-4.webp" type="image/webp"><img class="gallery__for-img" src="img/first-gallery/big-4.jpg" alt="Политика" width="1274" height="466"></picture>
           </a>
-          <span class="gallery__for-category info-text">
+          <a class="gallery__for-category info-text" href="#">
             Новости
-          </span>
+          </a>
           <h2 class="gallery__for-title">
             Домашняя работа. Как пандемия ускорила процесс диджитализации в бизнесе
           </h1>
@@ -250,17 +250,19 @@
     </div>
   </div>
 </section>
-      <div class="articles">
+      <div class="articles o-block">
   <div class="container">
-    <div class="articles__inner">
+    <div class="articles__inner o-block__inner">
       
-<article class="article articles__item">
-  <a class="article__box" href="#">
-    <picture><source srcset="img/articles/01.webp" type="image/webp"><img class="article__box-img" src="img/articles/01.jpg" alt="картинка митинг" width="297" height="260"></picture>
-    <span class="article__box-info info-black">
+<article class="article o-block__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/articles/01.webp" type="image/webp"><img class="article__box-img" src="img/articles/01.jpg" alt="картинка митинг" width="297" height="260"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
       Украина
-    </span>
-  </a>
+    </a>
+  </div>
   <a class="article__text-link article-text" href="#">
     Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом
   </a>
@@ -277,14 +279,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
       
-<article class="article articles__item">
-  <a class="article__box" href="#">
-    <picture><source srcset="img/articles/02.webp" type="image/webp"><img class="article__box-img" src="img/articles/02.jpg" alt="картинка искусство" width="300" height="260"></picture>
-    <span class="article__box-info info-black">
+<article class="article o-block__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/articles/02.webp" type="image/webp"><img class="article__box-img" src="img/articles/02.jpg" alt="картинка искусство" width="300" height="260"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
       Технологии и наука
-    </span>
-  </a>
+    </a>
+  </div>
   <a class="article__text-link article-text" href="#">
     Заговоренная связь. Все, что известно о 5G и его влиянии на здоровье
   </a>
@@ -301,17 +317,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
       
 
 
-<article class="article-long articles__item">
+<article class="article-long o-block__item">
   <picture><source srcset="img/articles/long-1.webp" type="image/webp"><img class="article-long__img" src="img/articles/long-1.jpg" alt="картинка искусство" width="300" height="260"></picture>
   <div class="article-long__box">
-    <span class="article-long__info info-text">
+    <a class="article-long__info info-text" href="#">
       рейтинг
-    </span>
+    </a>
   </div>
-  <span class="article-long__num">
+  <span class="article-long__num article-num">
     100
   </span>
   <a class="article-long__link article-text" href="#">
@@ -327,14 +355,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
       
-<article class="article articles__item">
-  <a class="article__box" href="#">
-    <picture><source srcset="img/articles/03.webp" type="image/webp"><img class="article__box-img" src="img/articles/03.jpg" alt="картинка о политике" width="302" height="260"></picture>
-    <span class="article__box-info info-black">
+<article class="article o-block__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/articles/03.webp" type="image/webp"><img class="article__box-img" src="img/articles/03.jpg" alt="картинка о политике" width="302" height="260"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
       Политика
-    </span>
-  </a>
+    </a>
+  </div>
   <a class="article__text-link article-text" href="#">
     Дубы и сосны. В соцсетях обсуждают сексистский скандал в "Слуге народа"
   </a>
@@ -351,17 +393,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
       
 
 
 
 
-<article class="article-primary articles__item">
+<article class="article-primary o-block__item">
   <picture><source srcset="img/articles/04.webp" type="image/webp"><img class="article-primary__img" src="img/articles/04.jpg" alt="картинка о Технологии и наука" width="296" height="293"></picture>
   <div class="article-primary__box">
-    <span class="article-primary__info info-text">
+    <a class="article-primary__info info-text" href="#">
       Технологии и наука
-    </span>
+    </a>
   </div>
   <a class="article-primary__link article-text" href="#">
     Заговоренная связь. Все, что известно о 5G и его влиянии на здоровье
@@ -375,14 +429,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
       
-<article class="article articles__item">
-  <a class="article__box" href="#">
-    <picture><source srcset="img/articles/05.webp" type="image/webp"><img class="article__box-img" src="img/articles/05.jpg" alt="политика" width="301" height="148"></picture>
-    <span class="article__box-info info-black">
+<article class="article o-block__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/articles/05.webp" type="image/webp"><img class="article__box-img" src="img/articles/05.jpg" alt="политика" width="301" height="148"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
       Политика
-    </span>
-  </a>
+    </a>
+  </div>
   <a class="article__text-link article-text" href="#">
     Кабмин назначил главой МОН Сергея Шкарлета в обход Рады
   </a>
@@ -399,14 +467,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
       
-<article class="article articles__item">
-  <a class="article__box" href="#">
-    <picture><source srcset="img/articles/06.webp" type="image/webp"><img class="article__box-img" src="img/articles/06.jpg" alt="Технологии и наука" width="300" height="148"></picture>
-    <span class="article__box-info info-black">
+<article class="article o-block__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/articles/06.webp" type="image/webp"><img class="article__box-img" src="img/articles/06.jpg" alt="Технологии и наука" width="300" height="148"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
       Технологии и наука
-    </span>
-  </a>
+    </a>
+  </div>
   <a class="article__text-link article-text" href="#">
     Агент изменений. Денис Малюська — о частных СИЗО, продаже тюрем и будущем люстрации
   </a>
@@ -423,23 +505,47 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
       
 
 
 
 
-<article class="article-primary articles__item">
+<article class="article-primary o-block__item">
   <picture><source srcset="img/articles/07.webp" type="image/webp"><img class="article-primary__img" src="img/articles/07.jpg" alt="картинка о политике" width="300" height="293"></picture>
   <div class="article-primary__box">
-    <span class="article-primary__info info-text">
+    <a class="article-primary__info info-text" href="#">
       Политика
-    </span>
+    </a>
   </div>
   <a class="article-primary__link article-text" href="#">
     Выход в люди. Как Шарий диктует информационную повестку дня в Украине
   </a>
   <time class="article-primary__time article-time" datetime="2021-09-13">15:44</time>
 </article>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -506,9 +612,9 @@
     </div>
   </div>
 </section>
-      <div class="news">
+      <div class="news o-grid">
   <div class="container">
-    <div class="news__inner">
+    <div class="news__inner o-grid__inner">
       
 
 
@@ -516,7 +622,11 @@
 
 
 
-<article class="article-pers news__item">
+
+
+
+
+<article class="article-pers o-grid__item o-grid__item--fluid">
   <picture><source srcset="img/news/author-1.webp" type="image/webp"><img class="article-pers__img" src="img/news/author-1.png" alt="автор статьи" width="430" height="401"></picture>
   <div class="article-pers__content">
     <a class="article-pers__title" href="#">
@@ -540,14 +650,24 @@
 
 
 
+
+
+
+
+
+
+
+
       
-<article class="article news__item">
-  <a class="article__box" href="#">
-    <picture><source srcset="img/news/article-1.webp" type="image/webp"><img class="article__box-img" src="img/news/article-1.jpg" alt="технологии" width="299" height="260"></picture>
-    <span class="article__box-info info-black">
+<article class="article o-grid__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/news/article-1.webp" type="image/webp"><img class="article__box-img" src="img/news/article-1.jpg" alt="технологии" width="299" height="260"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
       Технологии и наука
-    </span>
-  </a>
+    </a>
+  </div>
   <a class="article__text-link article-text" href="#">
     Счастье за 16 секунд. В чем секрет популярности TikTok и как соцсеть влияет на психику подростков
   </a>
@@ -564,6 +684,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
       
 
 
@@ -573,11 +705,15 @@
 
 
 
-<article class="article-quotes news__item">
+
+
+
+
+<article class="article-quotes o-grid__item">
   <a class="article-quotes__link" href="#"></a>
-  <span class="article-quotes__cap info-black">
+  <a class="article-quotes__cap info-black" href="#">
     мнение
-  </span>
+  </a>
   <blockquote class="article-quotes__text">
     Too much против me too. Почему сексистские скандалы в Украине ничем не заканчиваются
   </blockquote>
@@ -593,14 +729,24 @@
 
 
 
+
+
+
+
+
+
+
+
       
-<article class="article news__item">
-  <a class="article__box" href="#">
-    <picture><source srcset="img/news/article-2.webp" type="image/webp"><img class="article__box-img" src="img/news/article-2.jpg" alt="Технологии и наука" width="296" height="148"></picture>
-    <span class="article__box-info info-black">
+<article class="article o-grid__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/news/article-2.webp" type="image/webp"><img class="article__box-img" src="img/news/article-2.jpg" alt="Технологии и наука" width="296" height="148"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
       Технологии и наука
-    </span>
-  </a>
+    </a>
+  </div>
   <a class="article__text-link article-text" href="#">
     Новая нефть. Как ученые ищут редкие элементы на дне океана, в космосе и мусоре
   </a>
@@ -617,6 +763,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
       
 
 
@@ -628,35 +786,63 @@
 
 
 
-<article class="article-caption news__item">
+
+
+
+
+<article class="article-caption o-grid__item">
   <div class="article-caption__box">
-    <span class="article-caption__cap info-black">
+    <a class="article-caption__cap info-black" href="#">
       Технологии и наука
-    </span>
+    </a>
   </div>
   <a class="article-caption__link article-title" href="#">
     Все в масках и проверка температуры: в Украине стартовала основная сессия ВНО-2020
   </a>
   <p class="article-caption__text">
-    Первый тест – по математике. Для его прохождения зарегистрировались 186 072 человека. 
+    Первый тест – по математике. Для его прохождения зарегистрировались 186 072 человека.
   </p>
   <time class="article-caption__time article-time" datetime="2021-09-13">15:44</time>
 </article>
 
-      <picture><source srcset="img/news/prom.webp" type="image/webp"><img class="news__item" src="img/news/prom.jpg" alt="промышленость" width="300" height="250"></picture>
+
+
+
+
+
+
+
+
+      <a class="o-grid__item" href="#">
+        <picture><source srcset="img/news/prom.webp" type="image/webp"><img src="img/news/prom.jpg" alt="промышленость" width="300" height="250"></picture>
+      </a>
       
-<article class="article news__item">
-  <a class="article__box" href="#">
-    <picture><source srcset="img/news/article-3.webp" type="image/webp"><img class="article__box-img" src="img/news/article-3.jpg" alt="Культура" width="301" height="148"></picture>
-    <span class="article__box-info info-black">
+<article class="article o-grid__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/news/article-3.webp" type="image/webp"><img class="article__box-img" src="img/news/article-3.jpg" alt="Культура" width="301" height="148"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
       Культура
-    </span>
-  </a>
+    </a>
+  </div>
   <a class="article__text-link article-text" href="#">
     Обзор Юрия Володарского: 5 книг для тех, кто предпочитает "короткий метр" в литературе
   </a>
   <time class="article__time article-time" datetime="2021-09-13">15:44</time>
 </article>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -702,6 +888,1158 @@
     </div>
   </div>
 </div>
+</div>
+      <section class="rating">
+  <div class="container">
+    <h2 class="rating__title title">
+      Рейтинги
+    </h2>
+  </div>
+  <div class="rating__container container">
+    <div class="rating__inner">
+      <div class="swiper-button-prev"></div>
+      <div class="rating__swiper swiper">
+        <div class="rating__swiper-wrapper swiper-wrapper">
+          <div class="rating__swiper-slide swiper-slide">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="article-rating rating__item">
+  <div class="article-rating__box">
+    <a class="article-rating__cap info-black" href="@@infoLink">
+      Рейтинг
+    </a>
+  </div>
+  <a class="article-rating__link" href="#">
+    <picture><source srcset="img/rating/01.webp" type="image/webp"><img class="article-rating__img" src="img/rating/01.jpg" alt="картинка о политике" width="408" height="515"></picture>
+  </a>
+  <span class="article-rating__num article-num">
+    100
+  </span>
+  <div class="article-rating__title article-title--second">
+    <span class="article-rating__title--accent">
+      Рейтинг 2019
+    </span>
+    Самые влиятельные украинцы
+  </div>
+</article>
+
+
+
+
+
+
+
+          </div>
+          <div class="rating__swiper-slide swiper-slide">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="article-white rating__item">
+  <div class="article-white__box">
+    <a class="article-white__cap info-text" href="@@infoLink">
+      Рейтинг
+    </a>
+  </div>
+  <div class="article-white__imgbox">
+    <picture><source srcset="img/rating/02.webp" type="image/webp"><img class="article-white__img" src="img/rating/02.png" alt="картинка о политике" width="322" height="194"></picture>
+  </div>
+  <a class="article-white__link" href="#"></a>
+  <div class="article-white__title article-title--second">
+    Бунт кнопок. 30 лучших работодателей Украины — рейтинг Фокуса
+  </div>
+</article>
+
+
+
+
+
+          </div>
+          <div class="rating__swiper-slide swiper-slide">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="article-black rating__item">
+  <div class="article-black__box">
+    <a class="article-black__cap info-black" href="@@infoLink">
+      Рейтинг
+    </a>
+  </div>
+  <a class="article-black__link" href="#"></a>
+  <span class="article-black__num article-num">
+    100
+  </span>
+  <div class="article-black__title article-title--second">
+    Самые богатые люди Украины. Полный список
+  </div>
+</article>
+
+
+
+          </div>
+          <div class="rating__swiper-slide swiper-slide">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="article-black rating__item">
+  <div class="article-black__box">
+    <a class="article-black__cap info-black" href="@@infoLink">
+      Рейтинг
+    </a>
+  </div>
+  <a class="article-black__link" href="#"></a>
+  <span class="article-black__num article-num">
+    100
+  </span>
+  <div class="article-black__title article-title--second">
+    Самые богатые люди Украины. Полный список
+  </div>
+</article>
+
+
+
+          </div>
+          <div class="rating__swiper-slide swiper-slide">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="article-black rating__item">
+  <div class="article-black__box">
+    <a class="article-black__cap info-black" href="@@infoLink">
+      Рейтинг
+    </a>
+  </div>
+  <a class="article-black__link" href="#"></a>
+  <span class="article-black__num article-num">
+    100
+  </span>
+  <div class="article-black__title article-title--second">
+    Самые богатые люди Украины. Полный список
+  </div>
+</article>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+      <section class="country o-grid">
+  <div class="container">
+    <h2 class="country__title title">
+      Украина
+    </h2>
+    <div class="country__inner o-grid__inner">
+      
+<article class="article country__item o-grid__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/articles/08.webp" type="image/webp"><img class="article__box-img" src="img/articles/08.jpg" alt="документы" width="298" height="260"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
+      Украина
+    </a>
+  </div>
+  <a class="article__text-link article-text" href="#">
+    Проверка доверия: владелец «Три Н» Максим Криппа о махинациях в благотворительности
+  </a>
+  <time class="article__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+<article class="article country__item o-grid__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/articles/09.webp" type="image/webp"><img class="article__box-img" src="img/articles/09.jpg" alt="митинг" width="301" height="260"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
+      Украина
+    </a>
+  </div>
+  <a class="article__text-link article-text" href="#">
+    Выход из карантина: Кабмин разрешил открыть кинотеатры со 2 июля
+  </a>
+  <time class="article__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="article-photo country__item o-grid__item--fluid">
+  <div class="article-photo__box">
+    <a class="article-photo__cap info-text" href="#">
+      фото дня
+    </a>
+  </div>
+  <a class="article-photo__link" href="#">
+    <picture><source srcset="img/articles/10.webp" type="image/webp"><img class="article-photo__img" src="img/articles/10.jpg" alt="отель" width="623" height="399"></picture>
+  </a>
+  <div class="article-photo__title article-title--second">
+    Бизнес и немного удовольствия: Grand Hotel Lviv Luxury & SPA
+  </div>
+</article>
+
+      
+<article class="article country__item o-grid__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/articles/11.webp" type="image/webp"><img class="article__box-img" src="img/articles/11.jpg" alt="снимок" width="297" height="260"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
+      Украина
+    </a>
+  </div>
+  <a class="article__text-link article-text" href="#">
+    Пора домой. Истории мигрантов, которые вернулись в Украину из ОАЭ, Китая и Польши
+  </a>
+  <time class="article__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="article-quotes country__item o-grid__item">
+  <a class="article-quotes__link" href="#"></a>
+  <a class="article-quotes__cap info-black" href="#">
+    мнение
+  </a>
+  <blockquote class="article-quotes__text">
+    Государство или смерть. Какой кризис станет для Украины последним
+  </blockquote>
+  <div class="article-quotes__info">
+    <a class="article-quotes__author-link" href="#">
+      <picture><source srcset="img/articles/author-1.webp" type="image/webp"><img class="article-quotes__author" src="img/articles/author-1.jpg" alt="автор статьи" width="31" height="30"></picture>
+    </a>
+    <span class="article-quotes__name">
+      Михаил Багинский
+    </span>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+      
+<article class="article country__item o-grid__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/articles/12.webp" type="image/webp"><img class="article__box-img" src="img/articles/12.jpg" alt="снимок" width="297" height="260"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
+      Украина
+    </a>
+  </div>
+  <a class="article__text-link article-text" href="#">
+    Бетонная пята. Как застройщики превращают украинские города в ад
+  </a>
+  <time class="article__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+<article class="article country__item o-grid__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/articles/13.webp" type="image/webp"><img class="article__box-img" src="img/articles/13.jpg" alt="снимок" width="297" height="260"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
+      Украина
+    </a>
+  </div>
+  <a class="article__text-link article-text" href="#">
+    Смерть марафонца. Можно ли было спасти Екатерину Катющеву
+  </a>
+  <time class="article__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</section>
+      <section class="popular">
+  <div class="container">
+    <h2 class="popular__title title">
+      Сейчас Популярно
+    </h2>
+  </div>
+  <div class="popular__inner">
+    <div class="swiper-button-prev"></div>
+    <div class="popular__swiper swiper">
+      <div class="popular__swiper-wrapper swiper-wrapper">
+        <div class="popular__swiper-slide swiper-slide">
+          
+
+
+
+
+<article class="article-primary popular__item">
+  <picture><source srcset="img/popular/01.webp" type="image/webp"><img class="article-primary__img" src="img/popular/01.jpg" alt="Технологии и наука" width="298" height="293"></picture>
+  <div class="article-primary__box">
+    <a class="article-primary__info info-text" href="#">
+      протесты в США
+    </a>
+  </div>
+  <a class="article-primary__link article-text" href="#">
+    Жертвы собственной пропаганды. Как либеральные могут проиграть холодную войну
+  </a>
+  <time class="article-primary__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="popular__swiper-slide swiper-slide">
+          
+
+
+
+
+
+
+<article class="article-primary article-primary--white popular__item">
+  <div class="article-primary__box">
+    <a class="article-primary__info info-black" href="#">
+      Мир
+    </a>
+  </div>
+  <a class="article-primary__link article-text" href="#">
+    Австралиец выловил рекордного красного императора и решил передать его ученым
+  </a>
+  <time class="article-primary__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="popular__swiper-slide swiper-slide">
+          
+
+
+
+
+
+
+
+
+<article class="article-primary article-primary--black popular__item">
+  <div class="article-primary__box">
+    <a class="article-primary__info info-text" href="#">
+      Мир
+    </a>
+  </div>
+  <a class="article-primary__link article-text" href="#">
+    Жизнь за 80. 5 самых пожилых рекорсменов из Книги рекордов Гиннеса
+  </a>
+  <time class="article-primary__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="popular__swiper-slide swiper-slide">
+          
+
+
+
+
+<article class="article-primary popular__item">
+  <picture><source srcset="img/popular/02.webp" type="image/webp"><img class="article-primary__img" src="img/popular/02.jpg" alt="Технологии и наука" width="298" height="293"></picture>
+  <div class="article-primary__box">
+    <a class="article-primary__info info-text" href="#">
+      Мир
+    </a>
+  </div>
+  <a class="article-primary__link article-text" href="#">
+    Дресс-код постапокалипсиса. Как коронавирус и карантин навсегда изменили стиль
+  </a>
+  <time class="article-primary__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="popular__swiper-slide swiper-slide">
+          
+
+
+
+
+
+
+<article class="article-primary article-primary--white popular__item">
+  <div class="article-primary__box">
+    <a class="article-primary__info info-black" href="#">
+      Мир
+    </a>
+  </div>
+  <a class="article-primary__link article-text" href="#">
+    Австралиец выловил рекордного красного императора и решил передать его ученым
+  </a>
+  <time class="article-primary__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+      <section class="beautiful o-block">
+  <div class="container">
+    <h2 class="beautiful__title title">
+      Красивая страна
+    </h2>
+    <div class="beautiful__inner o-block__inner">
+      
+<article class="article beautiful__item o-block__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/beautiful/01.webp" type="image/webp"><img class="article__box-img" src="img/beautiful/01.jpg" alt="картинка о политике" width="302" height="260"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
+      Украине
+    </a>
+  </div>
+  <a class="article__text-link article-text" href="#">
+    Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом"
+  </a>
+  <time class="article__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+<article class="article beautiful__item o-block__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/beautiful/02.webp" type="image/webp"><img class="article__box-img" src="img/beautiful/02.jpg" alt="картинка о политике" width="302" height="260"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
+      Украина
+    </a>
+  </div>
+  <a class="article__text-link article-text" href="#">
+    Небоскребы советских времен. Три маршрута к памятникам советского модернизма в Киеве"
+  </a>
+  <time class="article__time article-time" datetime="2020-06-12 03:11">12 июня 2020 о 03:11</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+<article class="article-long beautiful__item o-block__item">
+  <picture><source srcset="img/articles/long-1.webp" type="image/webp"><img class="article-long__img" src="img/articles/long-1.jpg" alt="картинка искусство" width="300" height="260"></picture>
+  <div class="article-long__box">
+    <a class="article-long__info info-text" href="#">
+      Украина
+    </a>
+  </div>
+  <span class="article-long__num article-num">
+    100
+  </span>
+  <a class="article-long__link article-text" href="#">
+    Из песни слов не выкинешь. Рейтинг Фокуса: самые успешные звезды шоу-бизнеса
+  </a>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+<article class="article beautiful__item o-block__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/beautiful/03.webp" type="image/webp"><img class="article__box-img" src="img/beautiful/03.jpg" alt="картинка о политике" width="302" height="260"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
+      Украина
+    </a>
+  </div>
+  <a class="article__text-link article-text" href="#">
+    Как закалилась сталь. Музей Островского в Шепетовке — памятник архитектуры, а не идеологии
+  </a>
+  <time class="article__time article-time" datetime="2020-06-12 03:11">12 июня 2020 о 03:11</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</section>
+      <section class="slider-sec">
+  <div class="container">
+    <div class="slider-sec__swiper">
+      <div class="slider-sec__wrapper swiper-wrapper">
+        <div class="slider-sec__slide swiper-slide">
+          <a class="slider-sec__info info-text" href="#">
+            Длинный фокус
+          </a>
+          <a class="slider-sec__link" href="#">
+            <picture><source srcset="img/slider-sec/01.webp" type="image/webp"><img class="slider-sec__bg" src="img/slider-sec/01.jpg" alt="девушка" width="1272" height="399"></picture>
+          </a>
+          <h2 class="slider-sec__title">
+            Ни тоски, ни жалости
+          </h2>
+          <p class="slider-sec__text">
+            Почему украинки участвуют в боях без правил
+          </p>
+        </div>
+        <div class="slider-sec__slide swiper-slide">
+          <a class="slider-sec__info info-text" href="#">
+            Длинный фокус
+          </a>
+          <a class="slider-sec__link" href="#">
+            <picture><source srcset="img/slider-sec/01.webp" type="image/webp"><img class="slider-sec__bg" src="img/slider-sec/01.jpg" alt="девушка" width="1272" height="399"></picture>
+          </a>
+          <h2 class="slider-sec__title">
+            Ни тоски, ни жалости
+            Ни тоски, ни жалости
+          </h2>
+          <p class="slider-sec__text">
+            Почему украинки участвуют в боях без правил
+          </p>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+      <section class="publication o-block">
+  <div class="container">
+    <div class="publication__inner o-block__inner">
+      
+<article class="article publication__item o-block__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/publication/01.webp" type="image/webp"><img class="article__box-img" src="img/publication/01.jpg" alt="картинка искусство" width="300" height="148"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
+      Спорт
+    </a>
+  </div>
+  <a class="article__text-link article-text" href="#">
+    Финал Кубка Украины по футболу перенесут из Львова в Харьков, – СМИ
+  </a>
+  <time class="article__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="article-caption publication__item o-block__item">
+  <div class="article-caption__box">
+    <a class="article-caption__cap info-black" href="#">
+      Технологии и наука
+    </a>
+  </div>
+  <a class="article-caption__link article-title" href="#">
+    Это винтажная атмосфера. MONATIK — о том, что такое карантин с оптимистической точки зрения
+  </a>
+  <p class="article-caption__text">
+    Коронавирус перевел всех в осадное положение. Пока концертные залы пусты, выступления проходят в режиме онлайн или не проходят вообще.
+  </p>
+  <time class="article-caption__time article-time" datetime="2029-06-14 16:51">14 июня 2020 о 16:51</time>
+</article>
+
+
+
+
+
+
+
+
+
+      
+<article class="article publication__item o-block__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/publication/02.webp" type="image/webp"><img class="article__box-img" src="img/publication/02.jpg" alt="картинка искусство" width="300" height="148"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
+      Культура
+    </a>
+  </div>
+  <a class="article__text-link article-text" href="#">
+    Обзор Юрия Володарского: 5 книг для тех, кто предпочитает "короткий метр" в литературе
+  </a>
+  <time class="article__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <a class="publication__item o-block__item" href="#">
+        <picture><source srcset="img/publication/03.webp" type="image/webp"><img class="publication__item-img" src="img/publication/03.jpg" alt="okko" width="300" height="250"></picture>
+      </a>
+      
+<article class="article publication__item o-block__item">
+  <div class="article__box">
+    <a class="article__link" href="#">
+      <picture><source srcset="img/publication/04.webp" type="image/webp"><img class="article__box-img" src="img/publication/04.jpg" alt="картинка искусство" width="300" height="148"></picture>
+    </a>
+    <a class="article__box-info info-black" href="#">
+      Авто
+    </a>
+  </div>
+  <a class="article__text-link article-text" href="#">
+    Вдохновленные ностальгией. 3 лимитированные серии автомобилей, посвященные славному прошлому
+  </a>
+  <time class="article__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <a class="publication__item o-block__item" href="#">
+        <picture><source srcset="img/publication/05.webp" type="image/webp"><img class="publication__item-img" src="img/publication/05.jpg" alt="okko" width="300" height="250"></picture>
+      </a>
+      
+
+
+
+
+<article class="article-primary publication__item o-block__item">
+  <picture><source srcset="img/publication/06.webp" type="image/webp"><img class="article-primary__img" src="img/publication/06.jpg" alt="картинка о Технологии и наука" width="296" height="293"></picture>
+  <div class="article-primary__box">
+    <a class="article-primary__info info-text" href="#">
+      Длинный фокус
+    </a>
+  </div>
+  <a class="article-primary__link article-text" href="#">
+    КОГДА ТЫ ДОМА: как «умный дом» LG приходит на выручку во времена турбулентности
+  </a>
+  <time class="article-primary__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="article-caption publication__item o-block__item">
+  <div class="article-caption__box">
+    <a class="article-caption__cap info-black" href="#">
+      Архивариус
+    </a>
+  </div>
+  <a class="article-caption__link article-title" href="#">
+    Мосты всей жизни. В жизни Евгения Патона не было случайностей
+  </a>
+  <p class="article-caption__text">
+    Его называли человеком из будущего, гениальные идеи которого по сей день используются при изготовлении сверхпрочных сплавов для мостов, железных дорог и даже космических станций.
+  </p>
+  <time class="article-caption__time article-time" datetime="2021-09-13">15:44</time>
+</article>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</section>
+      <div class="sale-two">
+  <div class="sale-two__container container">
+    <div class="sale-two__inner">
+      <div class="sale-two__item">
+        <picture><source srcset="img/sale/okko.webp" type="image/webp"><img class="sale-two__img" src="img/sale/okko.png" alt="бренд" width="221" height="213"></picture>
+      </div>
+      <a class="sale-two__link" href="#"></a>
+      <div class="sale-two__item">
+        <picture><source srcset="img/sale/okko-text.webp" type="image/webp"><img class="sale-two__img" src="img/sale/okko-text.png" alt="бренд" width="179" height="242"></picture>
+      </div>
+    </div>
+  </div>
 </div>
     </main>
     <div class="search-popup" id="search-popup">
@@ -835,7 +2173,7 @@
   </div>
 </footer>
   </div>
-  <script src="js/main.min.js?_v=20220211165934"></script>
+  <script src="js/main.min.js?_v=20220214102048"></script>
 </body>
 
 </html>
